@@ -93,7 +93,7 @@
         </configuration>
       </plugin>
 
-      <!-- clean
+      <!-- clean https://maven.apache.org/plugins/maven-clean-plugin/
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
         <version>3.2.0</version>
@@ -113,3 +113,4 @@
   </build>
 
 </project>
+
