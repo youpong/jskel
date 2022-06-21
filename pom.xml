@@ -36,6 +36,23 @@
   <build>
     <plugins>
 
+      <!-- clean https://maven.apache.org/plugins/maven-clean-plugin/
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>.</directory>
+              <includes>
+                <include>Greeting.html</include>
+              </includes>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+      -->
+
       <!-- formatting source -->
       <plugin>
         <groupId>net.revelc.code.formatter</groupId>
@@ -93,22 +110,32 @@
         </configuration>
       </plugin>
 
-      <!-- clean https://maven.apache.org/plugins/maven-clean-plugin/
+      <!-- exec -->
       <plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>3.2.0</version>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
         <configuration>
-          <filesets>
-            <fileset>
-              <directory>.</directory>
-              <includes>
-                <include>Greeting.html</include>
-              </includes>
-            </fileset>
-          </filesets>
+          <executable>java</executable>
+          <mainClass>Main</mainClass>
+          <!--
+          <arguments>
+            <argument></argument>
+          </arguments>
+          <environmentVariables>
+            <LANG>en_US</LANG>
+          </environmentVariables>            
+          -->
         </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
-      -->
+
     </plugins>
   </build>
 
