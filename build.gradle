@@ -23,7 +23,7 @@ application {
 group = 'xxx'
 version = '0.1-SNAPSHOT'
 description = 'xxx'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 publishing {
     publications {
