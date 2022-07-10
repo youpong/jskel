@@ -27,6 +27,10 @@ spotless {
   }
 }
 
+clean.doFirst {
+    delete "${rootDir}/temp.html"
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
