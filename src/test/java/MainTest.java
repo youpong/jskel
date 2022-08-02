@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,5 +29,11 @@ public class MainTest {
             throw new Exception("not supported");
         });
         Assertions.assertEquals("not supported", e.getMessage());
+    }
+
+    @Test
+    @Disabled("until bug #XX fixed")
+    public void disabledTest() {
+        Assertions.assertTrue(false);
     }
 }
