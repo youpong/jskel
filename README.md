@@ -7,14 +7,14 @@ This is a skelton project for Java.
 
 # support gradle tasks
 
-* clean 
+* clean - clean working files & dirs
 * check - format check and test
-** spotlessCheck - formt check
-** spotlessApply - fix formt
-** test - test
+  - spotlessCheck - formt check
+  - spotlessApply - fix formt
+  - test - test
 * build - generate class files and jar
-* run
-* javadoc
+* run - execute
+* javadoc - generate javadoc api
 
 # files & directories
 
