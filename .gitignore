@@ -1,2 +1,6 @@
+# working dirs for gradle
 .gradle/
 build/
+# working file and dir for spotless
+.project
+.settings/

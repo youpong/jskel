@@ -22,6 +22,12 @@ application {
     mainClass = 'Main'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
 spotless {
   java {
     eclipse().configFile('formatter.xml')
