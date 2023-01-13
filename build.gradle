@@ -14,8 +14,8 @@ repositories {
 
 dependencies {
     testImplementation 'org.hamcrest:hamcrest:2.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
 }
 
 application {
@@ -39,7 +39,7 @@ tasks.named('test') {
 group = 'xxx'
 version = '0.1-SNAPSHOT'
 description = 'xxx'
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_16
 
 publishing {
     publications {
