@@ -16,6 +16,11 @@ This is a skelton project for Java.
 * run - execute
 * javadoc - generate javadoc api
 
+The command line arguments can be passed with --args. For example,
+```bash
+$ gradle run --args='-b README.md'
+```
+
 # files & directories
 
 * convert.md - how to convert Maven build to gradle
